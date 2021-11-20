@@ -1,0 +1,592 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Bold.woff2') format('woff2'),
+        url('../fonts/Rubik-Bold.woff') format('woff'),
+        url('../fonts/Rubik-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
+        url('../fonts/Rubik-Medium.woff') format('woff'),
+        url('../fonts/Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
+        url('../fonts/Rubik-Regular.woff') format('woff'),
+        url('../fonts/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Song Myung';
+    src: url('../fonts/SongMyung-Regular.woff2') format('woff2'),
+        url('../fonts/SongMyung-Regular.woff') format('woff'),
+        url('../fonts/SongMyung-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Roboto-MediumItalic.woff') format('woff'),
+        url('../fonts/Roboto-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body, ul,ol,li,p,h1,h3,h4{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: inline-block;
+}
+span:hover{
+    cursor: text;
+}
+/* CONTAINER */
+.container{
+    width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+/* HEADER */
+.header{
+    border-top: 4px solid #295093;
+    background: #F6F6F9;
+}
+.header-top{
+    display: flex;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+/* Site logo */
+.header-logo{
+    padding: 3px 6px 4px 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+    border-radius: 5px;
+}
+/* Currensies */
+.header-currencies{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 17px;
+    width: 258px;
+    height: 21px;
+}
+.currency span{
+    font-family: 'Rubik';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7A7A7A;
+}
+.currency span:first-child{
+    font-family: 'Rubik';
+    font-weight: bold;
+    color: #285193;
+    margin-right: 5px;
+}
+/* .telegram-join{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+    border-radius: 5px;
+}
+.telegram-join a{
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.telegram-join img{
+    margin-right:7px;
+}
+.telegram-join a span{
+
+} */
+
+/* Telegram link */
+.header-button{
+    margin-left: 462px;
+    padding: 10px;
+    padding-left: 37px;
+    position: relative;
+    background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+    border-radius: 5px;
+}
+.header-button:hover{
+    opacity: 0.7;
+}
+.header-button a{
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.header-button img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+/* NAV */
+.header-nav{
+    display: flex;
+    justify-content:center;
+    height: 68px;
+    margin-bottom: 18px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+    border-radius: 5px;
+}
+.header-nav-items{
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    padding: 20px 0px;
+}
+.header-nav a{
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: #515151;
+}
+.header-nav a:hover{
+    color: #295093 ;
+}
+.header-nav a:active{
+    opacity: 0.6;
+}
+/* ASIDE */
+.header-aside{
+    box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+    border-radius: 5px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+/* MAIN */
+.covid-block{
+    display: flex;
+    align-items: center;
+    padding: 40px 30px;
+    margin-bottom: 25px;
+    background: #F6F6F9;
+    border-radius: 5px;
+}
+/* COVID BLOCK TITLE Part */
+.covid-block-title{
+    display: flex;
+    width: 30%;
+}
+.covid-title-link{
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+/* COVID BLOCK INFORMATION Part */
+.covid-block-info{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.covid-info{
+    display: flex;
+    align-items: center;
+    padding:0px 35px;
+    border-left: 2px solid #F4CCD1;
+}
+.covid-info:nth-child(1){
+    border-left: 2px solid #EB5569;
+}
+.info-title-img{
+    margin-right: 25px;
+}
+.info-text-box h4{
+    margin-bottom: 5px;
+    font-family: 'Rubik';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.covid-title-red{
+    color: #DB0000;
+}
+.covid-title-green{
+    color: #05B135;
+}
+.infected{
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+/* POSTS */
+.new-posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: unset;
+    margin: -10px;
+    margin-bottom: 20px;
+}
+.post{
+    width: 386px;
+    margin: 10px;
+}
+.post a{
+    color: #000;
+}
+.post-title{
+    font-family: 'Rubik',sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+}
+.post-title:hover{
+    color: #295093;
+}
+.post-date{
+    font-family: 'Rubik';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6B6D97;
+}
+.natification::before{
+    content: '';
+    display: inline-block;
+    width:31px;
+    height:35px;
+    margin-right:17px;
+    background-image: url(../images/bell-icon@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.natification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0px;
+    margin-bottom: 25px;
+    background: rgba(239, 186, 84, 0.18);
+    border-radius: 5px;
+}
+.natification img{
+    margin-right: 17px;
+
+}
+.natification h2{
+    margin: 0;
+    padding: 0;
+    margin-right: 224px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.natification-link{
+    padding: 8px 8px 8px 15px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+    border-radius: 5px;
+}
+.natification-link:hover{
+    opacity: 0.7;
+}
+/* News */
+.news-wrapper{
+    display: flex;
+}
+.column-news{
+    width:70%;
+    margin-bottom: 25px;
+}
+.column-news h2{
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.news-item{
+    margin-bottom: 25px;
+    padding-right: 25px;
+}
+
+.news-link{
+    display: flex;
+    color: #000;
+}
+.news-img{
+    margin-right: 20px;
+}
+.news-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.news-title{
+    flex-grow: 0;
+    margin-bottom: 8px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #202020;
+}
+.news-title:hover{
+    color: #295093;
+}
+.news-discription{
+    flex-grow: 1;
+    font-family: 'Rubik';
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #434343;
+}
+.news-date::before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    margin-right: 4px;
+    background-image: url(../images/timeicon.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.news-date{
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #7688A4;
+}
+.news-date img{
+    margin-right: 4px;
+}
+.news-botton{
+    display: flex;
+    justify-content: center;
+}
+.news-botton:hover{
+    opacity: 0.7;
+}
+.news-botton a{
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    background: #295093;
+    border-radius: 5px;
+}
+.popular-news-wrapper{
+    width: 386px;
+    padding: 15px 20px;
+    background: #F6F6F9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.popular-news-item:not(:last-child){
+    padding-bottom: 15px;
+    border-bottom: 4px solid #e4e4e4;
+}
+.popular-news-title{
+    font-family: 'Rubik';
+    font-weight: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.popular-news-link{
+    color: #202020;
+}
+.popular-news-discription{
+    margin:17px 0px;
+    font-family: 'Rubik';
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+}
+.popular-news-discription:hover{
+    color: #295093;
+}
+.apps-block{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #F6F6F9;
+    border-radius: 5px;
+}
+.apps-block-image{
+    width: 230px;
+    height: 180px;
+    background-image:  url("../images/phone.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.apps-block-text h4{
+    padding-bottom: 10px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #295093;
+}
+.apps-block-text p{
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+.apps-download{
+    display: flex;
+}
+.googleplay-app{
+    margin-left: 74px;
+}
+.appstore-app{
+    margin-left: 20px;
+}
+.footer{
+    color: #fff;
+    background-color: #295093;
+}
+.footer-top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 10px 0px 13px 0px;
+    border-bottom: 3px solid #133C82;
+}
+.footer-logo{
+    margin-right: 198px;
+    padding: 11px 12px 6px 9px;
+    background: #133C82;
+    border-radius: 5px;
+}
+.footer-top p{
+    margin-right: 17px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.footer-button{
+    padding: 10px;
+    padding-left: 37px;
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+}
+.footer-button:hover{
+    opacity: 0.7;
+}
+.footer-button a{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #295093;
+}
+.footer-button img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.footer-remember h4{
+    font-family: 'Rubik';
+    font-weight: 500;
+}
+.footer-remember p{
+    width: 365px;
+    margin: 14px 0px;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.footer-bottom{
+    display: flex;
+}
+.footer-lists{
+    display: flex;
+}
+.footer-list{
+    margin-left: 115px;
+}
+.footer-item{
+    margin-bottom: 7px;
+}
+.footer-item a{
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.footer-item a:hover{
+    text-decoration: underline;
+}
